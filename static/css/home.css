@@ -1,0 +1,12 @@
+body {
+  text-align: center;
+}
+
+#calculator {
+  margin-top: 6em;
+  width: 32em;
+}
+
+#title {
+  margin-bottom: 2em;
+}

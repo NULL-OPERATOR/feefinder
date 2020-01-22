@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+<div id="calculator" class="container">
+  <h5 id="title">Fee Finder</h5>
+  <form>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Select Term</label>
+      <div class="btn-group btn-group-toggle term-selection" data-toggle="buttons">
+        <label class="btn btn-secondary active">
+          <input type="radio" name="options" value="12" id="term12" checked> 12
+        </label>
+        <label class="btn btn-secondary">
+          <input type="radio" name="options" value="24" id="term24"> 24
+        </label>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">
+        Selected Amount
+        <button id="amount" type="button" class="btn btn-secondary" disabled>£0</button>
+      </label>
+      <small id="emailHelp" class="form-text text-muted">Min: £1,000 Max: £20,000, Increments of £5.</small>
+      <input type="range" class="custom-range" min="1000" max="20000" step="5" id="range-slider">
+    </div>
+
+    <div class="form-group">
+      <label for="exampleInputEmail1">Fee</label>
+      <button id="fee" type="button" class="btn btn-secondary" disabled>0</button>
+    </div>
+  </form>
+</div>
+{% endblock %}
